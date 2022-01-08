@@ -31,8 +31,8 @@ app.use(express.json());
 // });
 
 app.get('/', (req, res) => {
-    console.log("hit");
-    res.send('Hit')
+    console.log("Placeholder");
+    res.send('Placeholder')
 });
 
 app.listen(PORT, () =>
