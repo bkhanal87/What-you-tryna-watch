@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import  from './pages/';
+// import  from './pages/';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -36,4 +36,4 @@ function App() {
 
 export default App;
 
-export default App;
+// export default App;
