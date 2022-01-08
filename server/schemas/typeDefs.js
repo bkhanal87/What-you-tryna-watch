@@ -29,10 +29,12 @@ const typeDefs = gql`
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
-    addComment(comment_body: String!, movie_id: Int!, user: User!): Comments
+    addComment(comment_body: String!, movie_id: Int!): Comments
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
   }
 `;
 
 module.exports = typeDefs;
+
+// addComment(comment_body: String!, movie_id: Int!, user: User!): Comments
