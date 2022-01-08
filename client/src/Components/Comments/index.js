@@ -1,19 +1,17 @@
 import React from "react";
 
-const Comments = () => {
+const Comments = (props) => {
   return (
     <div>
+      <h1>Comments Section</h1>
       <input
             type="text"
-            id="header-search"
+            id="comment-section"
             placeholder="Enter comment here"
             name="s" 
         />
-      <button type="submit">Search</button>
-      <div>
-        <p>User Name</p>
-        <div>This is a comment.</div>
-      </div>
+      <button type="submit">Post Comment</button>
+      
     </div>
   );
 };

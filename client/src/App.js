@@ -6,7 +6,7 @@ import React from 'react';
 // import  from './pages/';
 // import Header from './components/Header';
 // import Footer from './components/Footer';
-import SearchBar from './Components/SearchBar/SearchBar'
+import SearchBar from './Components/SearchBar'
 
 // const client = new ApolloClient({
 //   uri: '/graphql',
