@@ -23,7 +23,7 @@ Comment.init (
         },
         
         movie_id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
 
@@ -41,7 +41,7 @@ Comment.init (
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'review',
+        modelName: 'comment',
       }
 )
 
