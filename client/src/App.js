@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import  from './pages/';
+// import Chats  from './pages/Chats';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -22,9 +22,8 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            {/* Create a route to display a single thought's comments based on its `thoughtId` provided in the URL */}
-            <Route exact path="/thoughts/:thoughtId">
-              <SingleThought />
+            <Route exact path="/chats">
+              <Chats />
             </Route>
           </div>
           <Footer />
@@ -36,4 +35,3 @@ function App() {
 
 export default App;
 
-export default App;
