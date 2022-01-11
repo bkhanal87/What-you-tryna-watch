@@ -1,4 +1,4 @@
-// Import Hooks from react
+Import Hooks from react
 import { useState, useEffect, useRef } from "react";
 
 // Autocomplete component
@@ -68,4 +68,10 @@ const AutoComplete = ({
   );
 };
 
+
+
+
+
 export default AutoComplete;
+
+
