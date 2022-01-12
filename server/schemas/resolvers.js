@@ -36,15 +36,17 @@ const resolvers = {
             return { token, user}
         },
 
-        addComment: async (parent, {comment}, context) => {
-            const username = context.user.username;
-            return User.findOneAndUpdate(
-                {username},
-                {$addToSet: { comments: comment}},
-                {new: true}
-            )
-        },
+
     }
 }
 
 module.exports = resolvers;
+
+// addComment: async (parent, {comment}, context) => {
+//   const username = context.user.username;
+//   return User.findOneAndUpdate(
+//       {username},
+//       {$addToSet: { comments: comment}},
+//       {new: true}
+//   )
+// },
