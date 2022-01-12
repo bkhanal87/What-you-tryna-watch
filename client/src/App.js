@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Navbar } from "react-bootstrap";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { Router } from "react-router";
@@ -11,22 +12,30 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
   return (
     <>
-      <ApolloProvider client={client}>
+      {/* <ApolloProvider client={client}>
         <Router>
           <div className="flex-column justify-flex-start min-100-vh">
-            <Header />
+            <Header /> */}
+
+            
+
+            
             <div className="container">
+
               <SearchBar />
+
             </div>
-            <Footer />
+             
+            
+            {/* <Footer />
           </div>
         </Router>
-      </ApolloProvider>
+      </ApolloProvider> */}
     </>
   );
 }
-
 export default App;
