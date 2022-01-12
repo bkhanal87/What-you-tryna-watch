@@ -1,22 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import SearchBar from "./Components/SearchBar/searchMovie";
-import "./Components/styles/style.css";
-import "./Components/styles/movie.css"
-import "./Components/styles/searchBar.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-class Main extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <h1 className="title">Movie Finder App</h1>
-        <SearchBar/>
-      </div>
-    );
-  }
-}
+// import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Main />,document.getElementById("root"));
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

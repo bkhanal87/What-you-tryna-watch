@@ -6,7 +6,7 @@ import Img3 from "../../img/img3.jpg";
 import Img4 from "../../img/img4.jpg";
 import Img5 from "../../img/img5.jpg";
 
-import { Carousel } from "react-bootstrap";
+// import { Carousel } from "react-bootstrap";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
