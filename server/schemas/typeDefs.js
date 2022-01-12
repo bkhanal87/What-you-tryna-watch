@@ -1,40 +1,41 @@
-const { gql } = require('apollo-server-express');
+const {gql} = require('apollo-server-express');
 
 const typeDefs = gql`
+    type User {
+        _id: ID
+        username: String!
+        email: String!
+        comments: [Comment]!
+    }
+    
+    type Comment {
+        _id: ID
+        movieId: ID!
+        description: String!
+        user: User!
+    }
 
-  type User {
-    id: ID!
-    username: String!
-    email: String!
-    comments: [Comments!]
-  }
+    type Query {
+        getUser: User
+        getComment: User
+    }
+    
+    type Auth {
+        token: ID!
+        user: User
+    }
 
-  type Comments {
-    id: ID!
-    comment_body: String!
-    movie_id: Int!
-    user: User!
-  }
+    input AddComment {
+        _id: ID
+        movieId: ID!
+        description: String!
+    }
+    
+    type Mutation {
+        loginUser(email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
+        addComment(comment: AddComment!): User
+    }`
 
-  type Auth {
-    token: ID
-    user: User
-  }
-
-  type Query {
-    getUser(id: ID!): User
-    getAllUsers: [User!]
-    getComments(id: ID!): Comments
-  }
-
-  type Mutation {
-    addUser(username: String!, email: String!, password: String!): Auth
-    addComment(comment_body: String!, movie_id: Int!): Comments
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
-    login(email: String!, password: String!): Auth
-  }
-`;
 
 module.exports = typeDefs;
-
-// addComment(comment_body: String!, movie_id: Int!, user: User!): Comments
