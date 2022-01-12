@@ -6,6 +6,9 @@ import { Router } from "react-router";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import SearchBar from "./Components/SearchBar/searchMovie";
+import './Components/styles/searchBar.css';
+import './Components/styles/movie.css';
+import './Components/styles/style.css';
 
 const client = new ApolloClient({
   uri: "/graphql",
