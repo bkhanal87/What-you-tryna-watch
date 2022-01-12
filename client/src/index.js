@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import SearchBar from "./Components/SearchBar/searchMovie";
+import App from "./App2.js";
+import SearchBar from "./Components/SearchBar/searchMovie.js";
 import "./Components/styles/style.css";
 import "./Components/styles/movie.css"
 import "./Components/styles/searchBar.css";
