@@ -1,16 +1,17 @@
 import React from "react";
-// import { Navbar } from "react-bootstrap";
-// import Header from './Components/Header';
-// import Footer from './components/Footer';
-import SearchBar from "./Components/SearchBar/searchMovie";
-import "./Components/styles/style.css";
-import "./Components/styles/movie.css"
-import "./Components/styles/searchBar.css";
 
-// const client = new ApolloClient({
-//   uri: '/graphql',
-//   cache: new InMemoryCache(),
-// });
+import { Navbar } from "react-bootstrap";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { Router } from "react-router";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import SearchBar from "./Components/SearchBar/searchMovie";
+
+const client = new ApolloClient({
+  uri: "/graphql",
+  cache: new InMemoryCache(),
+});
+
 
 function App() {
   return (
@@ -22,10 +23,11 @@ function App() {
 
             
 
-            {/* <Header /> */}
+            
             <div className="container">
-            <h1 className="title">Movie Finder App</h1>
-            <SearchBar />
+
+              <SearchBar />
+
             </div>
              
             
@@ -34,7 +36,6 @@ function App() {
         </Router>
       </ApolloProvider> */}
     </>
-
   );
 }
 export default App;
