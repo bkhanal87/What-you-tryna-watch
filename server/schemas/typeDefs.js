@@ -24,18 +24,20 @@ const typeDefs = gql`
         token: ID!
         user: User
     }
-
-    input AddComment {
-        _id: ID
-        movieId: ID!
-        description: String!
-    }
     
     type Mutation {
         loginUser(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
-        addComment(comment: AddComment!): User
     }`
 
 
 module.exports = typeDefs;
+
+
+// input AddComment {
+//   _id: ID
+//   movieId: ID!
+//   description: String!
+// }
+
+// addComment(comment: AddComment!): User
