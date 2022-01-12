@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App2.js";
+import App from "./App.js";
 import SearchBar from "./Components/SearchBar/searchMovie.js";
 import "./Components/styles/style.css";
 import "./Components/styles/movie.css"
