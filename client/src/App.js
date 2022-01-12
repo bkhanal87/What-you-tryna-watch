@@ -1,9 +1,11 @@
-import React from 'react';
-import { Navbar } from 'react-bootstrap';
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-import SearchBar from './Components/SearchBar'
+import React from "react";
+// import { Navbar } from "react-bootstrap";
+// import Header from './Components/Header';
+// import Footer from './components/Footer';
+import SearchBar from "./Components/SearchBar/searchMovie";
+import "./Components/styles/style.css";
+import "./Components/styles/movie.css"
+import "./Components/styles/searchBar.css";
 
 // const client = new ApolloClient({
 //   uri: '/graphql',
@@ -13,22 +15,26 @@ import SearchBar from './Components/SearchBar'
 function App() {
   return (
     <>
-      <ApolloProvider client={client}>
+      {/* <ApolloProvider client={client}>
         <Router>
           <div className="flex-column justify-flex-start min-100-vh">
-            <Header />
+            <Header /> */}
+
+            
+
+            {/* <Header /> */}
             <div className="container">
-             
-              <SearchBar />
-             
+            <h1 className="title">Movie Finder App</h1>
+            <SearchBar />
             </div>
-            <Footer />
+             
+            
+            {/* <Footer />
           </div>
         </Router>
-      </ApolloProvider>
+      </ApolloProvider> */}
     </>
 
   );
 }
-
 export default App;
