@@ -98,3 +98,5 @@ const SearchBar = () => {
   );
 };
 export default SearchBar;
+
+<Test>Hello World!</Test>;
