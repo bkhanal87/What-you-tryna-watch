@@ -5,10 +5,8 @@ import Img2 from "../../img/img2.jpg";
 import Img3 from "../../img/img3.jpg";
 import Img4 from "../../img/img4.jpg";
 import Img5 from "../../img/img5.jpg";
-
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { Card, Carousel, Container, Form } from "react-bootstrap";
 import AutoComplete from "../AutoComplete";
 
@@ -20,7 +18,6 @@ const SearchBar = () => {
   useEffect(() => {
     const movie = [];
     console.log("running");
-
     if (search.length > 3) {
       fetch(`http://www.omdbapi.com/?s=${search}&page=1&apikey=c58b06f8`)
         .then((response) => {
@@ -39,16 +36,13 @@ const SearchBar = () => {
     }
     // setOptions(movie);
   }, [search]);
-
   function selectOption(value) {
     setSearch(value);
     setDisplay(false);
   }
-
   function handleSubmit(event) {
     event.preventDefault();
     console.log(search);
-
     fetch(`http://www.omdbapi.com/?t=${search}&apikey=c58b06f8`)
       .then((response) => {
         if (!response.ok) {
@@ -61,7 +55,6 @@ const SearchBar = () => {
         console.log(`Error getting data: ${error.message}`);
       });
   }
-
   return (
     <>
       <Form className="form" onSubmit={handleSubmit}>
@@ -98,5 +91,3 @@ const SearchBar = () => {
   );
 };
 export default SearchBar;
-
-<Test>Hello World!</Test>;
