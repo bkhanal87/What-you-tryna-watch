@@ -6,7 +6,10 @@ import Img3 from "../../img/img3.jpg";
 import Img4 from "../../img/img4.jpg";
 import Img5 from "../../img/img5.jpg";
 
-import { Carousel } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Card, Carousel, Container, Form } from "react-bootstrap";
 import AutoComplete from "../AutoComplete";
 
 const SearchBar = () => {
@@ -61,33 +64,36 @@ const SearchBar = () => {
 
   return (
     <>
-      <form className="form" onSubmit={handleSubmit}>
-        <label className="input" htmlFor="query">
-          Movie Name
-        </label>
-        {/* Movie{" "} */}
-        <input
-          className="input"
-          type="text"
-          // placeholder="Enter movie name"
-          name="query"
-          placeholder="i.e Avengers"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <AutoComplete
-          options={options}
-          selectOption={selectOption}
-          display={display}
-        />
-        <button className="button" type="submit" value="Submit">
-          Search
-        </button>
-      </form>
-
-      <div className="card-list">
+      <Form className="form" onSubmit={handleSubmit}>
+        <Form.Group>
+          <Container>
+            <Form.Label className="input" htmlFor="query">
+              Movie Name
+            </Form.Label>
+            {/* Movie{" "} */}
+            <Form.Control
+              className="input"
+              type="text"
+              // placeholder="Enter movie name"
+              name="query"
+              placeholder="i.e Avengers"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <AutoComplete
+              options={options}
+              selectOption={selectOption}
+              display={display}
+            />
+            <Button className="button" type="submit" value="Submit">
+              Search
+            </Button>
+          </Container>
+        </Form.Group>
+      </Form>
+      <Card className="card-list">
         <Movie movie={movie} />
-      </div>
+      </Card>
     </>
   );
 };
