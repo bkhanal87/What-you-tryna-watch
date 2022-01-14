@@ -10,10 +10,10 @@ import './Components/styles/searchBar.css';
 import './Components/styles/movie.css';
 import './Components/styles/style.css';
 
-const client = new ApolloClient({
-  uri: "/graphql",
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   uri: "/graphql",
+//   cache: new InMemoryCache(),
+// });
 
 
 function App() {

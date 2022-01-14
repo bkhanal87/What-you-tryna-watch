@@ -5,13 +5,17 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String
-    savedBooks: [Book]
   }
 
   type Comment {
     _id: ID!
-    description: String
+    commentBody: String
     movieId: String!
+  }
+
+  input AddComment {
+    movieId: String!
+    commentBody: String!
   }
 
   type Auth {
@@ -21,14 +25,13 @@ const typeDefs = gql`
 
   type Query {
     getUser: User
-    
+    getMovieComments(movieId: String!): [Comment]
   }
 
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveBook(bookData: BookInput!): User
-    removeBook(bookId: ID!): User
+    addComment(comment: AddComment!): Comment
   }
 `;
 
@@ -36,10 +39,5 @@ module.exports = typeDefs;
 
 
 
-// input AddComment {
-//   _id: ID
-//   movieId: ID!
-//   description: String!
-// }
 
-// addComment(comment: AddComment!): User
+
