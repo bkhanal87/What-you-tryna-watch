@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Comment } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -13,6 +13,12 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
+
+    getMovieComments: async (parent, {movieId}, context) => {
+          const commentData = await Comment.find({movieId})
+  
+          return commentData;
+      },
   },
 
   Mutation: {
@@ -38,11 +44,14 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    // saveComment: async (parent, { bookData }, context) => {
+    addComment: async (parent, { comment }, context) => {
+        newComment = await Comment.create(comment)
+        console.log(newComment)
+        return newComment
     //   if (context.user) {
     //     const updatedUser = await User.findByIdAndUpdate(
     //       { _id: context.user._id },
-    //       { $push: { savedBooks: bookData } },
+    //       { $push: { savedBooks: commentData } },
     //       { new: true }
     //     );
 
@@ -50,7 +59,7 @@ const resolvers = {
     //   }
 
     //   throw new AuthenticationError('You need to be logged in!');
-    // },
+    },
   },
 };
 

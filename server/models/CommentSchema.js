@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const commentSchema = new Schema({
-  description: {
+  commentBody: {
     type: String,
     required: true,
   },
@@ -10,10 +10,10 @@ const commentSchema = new Schema({
     type: String,
     required: true,
   },
-  // saved movie id from API
-  user : { type: Schema.Types.ObjectId, ref: 'User' },
+  
+  // user : { type: Schema.Types.ObjectId, ref: 'User' },
 });
 
 const Comment = model('Comment', commentSchema);
 
-module.exports = commentSchema;
+module.exports = Comment;
