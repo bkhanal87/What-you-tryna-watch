@@ -36,14 +36,7 @@ function App() {
             <Footer />
           </div>
             
-        </BrowserRouter>
-             
-            {/* <Header />
-            <div className="container">
-            <SearchBar />
-            </div>
-            <Footer /> */}
-            
+        </BrowserRouter>   
       </ApolloProvider>
     </>
   );
