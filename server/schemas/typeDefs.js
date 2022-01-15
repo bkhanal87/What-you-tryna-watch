@@ -14,6 +14,7 @@ const typeDefs = gql`
   input AddComment {
     movieId: String!
     commentBody: String!
+    userId: String!
   }
   type Auth {
     token: ID!

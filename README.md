@@ -13,7 +13,7 @@ have found the movie the title, rating, year of release, runtime, and genre alon
 
 ## Collaborators
 
-Christian : Back-End
+Christian : Back-End/Database;
 
 Kirk: React Components;
 

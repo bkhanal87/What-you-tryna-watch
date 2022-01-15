@@ -45,6 +45,7 @@ const resolvers = {
       return { token, user };
     },
     addComment: async (parent, { comment }, context) => {
+      console.log(comment.commentBody)
         newComment = await Comment.create(comment)
         console.log(newComment)
         return newComment
