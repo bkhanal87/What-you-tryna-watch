@@ -14,7 +14,7 @@ const SearchBar = () => {
     const movie = [];
     console.log("running");
     if (search.length > 3) {
-      fetch(`http://www.omdbapi.com/?s=${search}&page=1&apikey=c58b06f8`)
+      fetch(`https://www.omdbapi.com/?s=${search}&page=1&apikey=c58b06f8`)
         .then((response) => {
           if (!response.ok) {
             console.log(`Did not get an ok. got: ${response.statusText}`);
@@ -38,7 +38,7 @@ const SearchBar = () => {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(search);
-    fetch(`http://www.omdbapi.com/?t=${search}&apikey=c58b06f8`)
+    fetch(`https://www.omdbapi.com/?t=${search}&apikey=c58b06f8`)
       .then((response) => {
         if (!response.ok) {
           console.log(`Did not get an ok. got: ${response.statusText}`);
