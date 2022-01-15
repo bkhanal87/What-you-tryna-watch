@@ -13,15 +13,15 @@ have found the movie the title, rating, year of release, runtime, and genre alon
 
 ## Collaborators
 
-Christian : Create database ;
+Christian : Back-End
 
 Kirk: React Components;
 
 Cooper : CSS;
 
-Basu : Search Engine;
+Basu : Search Engine Autocomplete; CSS
 
-Greg : Routes, Login
+Greg : Login Component, MovieAPI, Comment Component
 
 ## Technologies
 React.js
@@ -40,4 +40,5 @@ SQL DB
 
 
 ## Link
+- https://protected-thicket-50731.herokuapp.com/
 
