@@ -49,12 +49,12 @@ const CommentBox = (props) => {
     console.log(addComment)
     const { data } = await addComment({variables: { comment: {
       commentBody: comment, 
-      movieId: props.movieTitle, 
+      movieId: props.movieId, 
       userId: user.id
     }}});
     if (data) setCommentAdded(true)
   }
-  if (!props.movieTitle) {
+  if (!props.movieId) {
     return <div></div>
   }
   if (!user.email) {
