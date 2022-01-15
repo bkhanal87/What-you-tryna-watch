@@ -11,7 +11,11 @@ const commentSchema = new Schema({
     required: true,
   },
   
-  // user : { type: Schema.Types.ObjectId, ref: 'User' },
+  userId : { 
+    type: String,
+    required: true
+   }
+
 });
 
 const Comment = model('Comment', commentSchema);

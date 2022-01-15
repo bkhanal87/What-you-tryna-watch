@@ -82,7 +82,7 @@ const SearchBar = () => {
       </Form>
       <Card className="card-list">
         <Movie movie={movie} />
-        <CommentBox></CommentBox>
+        <CommentBox movieTitle={movie.Title}></CommentBox>
       </Card>
     </>
   );
