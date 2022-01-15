@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import Comments from "../Comments";
 
 const Movie = (props) => {
   return (

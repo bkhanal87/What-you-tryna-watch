@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Carousel, Container, Form } from "react-bootstrap";
 import AutoComplete from "../AutoComplete";
+import CommentBox from "../CommentBox";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
@@ -81,6 +82,7 @@ const SearchBar = () => {
       </Form>
       <Card className="card-list">
         <Movie movie={movie} />
+        <CommentBox movieId={movie.imdbID}></CommentBox>
       </Card>
     </>
   );
