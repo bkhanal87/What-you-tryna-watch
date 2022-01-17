@@ -1,28 +1,48 @@
 import { React, useState } from "react";
 import CommentList from "../CommentList";
-import { Card, CardGroup, Figure, ListGroup } from "react-bootstrap";
+import { Card, CardGroup, Figure, ListGroup, Accordion } from "react-bootstrap";
 import Footer from "../Footer";
+import '../styles/movieDisplay.css'
 
 const Movie = (props) => {
   return (
     // <>
+    <>
     <Card>
       {/* <div className="card-content"> */}
       {/* <Card> */}
-      <Figure>
-        <Figure.Image
-          width={271}
-          height={280}
-          alt="171x180"
-          src={props.movie.Poster}
-        />
-      </Figure>
+      <div className="m">
+        <div className="m-left">
+          <Figure>
+            <Figure.Image
+              width={300}
+              height={300}
+              alt="Movie poster"
+              src={props.movie.Poster}
+            />
+          </Figure>
+        </div>
+
+        <div className="m-right">
+          <Figure className="m-title">{props.movie.Title}</Figure>
+          <Figure className="m-info">Rating: {props.movie.Rated}</Figure>
+          <Figure className="m-info">Release: {props.movie.Year}</Figure>
+          <Figure className="m-info">Runtime: {props.movie.Runtime}</Figure>
+          <Figure className="m-info">Genre: {props.movie.Genre}</Figure>
+
+          <Accordion className="m-plot">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Story</Accordion.Header>
+              <Accordion.Body>
+                {props.movie.Plot}
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+
+        </div>
+
+      </div>
       {/* <img className="card-img" src={props.movie.Poster} /> */}
-      <Figure.Caption>Title:{props.movie.Title}</Figure.Caption>
-      <Figure.Caption>Rating:{props.movie.Rated}</Figure.Caption>
-      <Figure.Caption>Release:{props.movie.Year}</Figure.Caption>
-      <Figure.Caption>Runtime:{props.movie.Runtime}</Figure.Caption>
-      <Figure.Caption>Genre:{props.movie.Genre}</Figure.Caption>
 
       {/* <ListGroup variant="flush">
         <ListGroup.Item>Title: {props.movie.Title}</ListGroup.Item>{" "}
@@ -51,6 +71,7 @@ const Movie = (props) => {
       {/* </div> */}
       <CommentList movieId={props.movie.imdbID} />
     </Card>
+    </>
 
     // </>
   );

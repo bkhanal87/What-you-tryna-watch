@@ -1,0 +1,8 @@
+.h {
+    display: flex;
+    align-items: center;
+}
+
+.h-btns{
+    margin-left: auto;
+}
