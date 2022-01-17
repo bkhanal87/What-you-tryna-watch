@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useQuery } from '@apollo/client';
 import { GET_MOVIE_COMMENTS } from '../../utils/queries';
+import '../styles/comments.css'
 
 const CommentList = (props) => {
 
@@ -12,12 +13,22 @@ const CommentList = (props) => {
     })
 
 
-    if (!data) return "no comments";
+    if (!data) return "No comments for this movie yet. You can be the first!";
+
     if (loading) return null;
-    console.log(data)
+
+    console.log(data.getMovieComments.length)
+
     return (
         <div>
-            {data.getMovieComments.map((item) => item.commentBody)}
+            <h4 className="c-title">Comments</h4>
+            {
+            data.getMovieComments.length < 1
+            ?
+            <div>No comments for this movie yet. You can be the first!</div>
+            :
+            data.getMovieComments.map((item) => <div className="c-body">{item.commentBody}</div>)
+            }
         </div>
     );
 };

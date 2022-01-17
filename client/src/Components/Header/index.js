@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Login from '../../pages/Login';
 import Signup from '../../pages/Signup'
+import '../styles/header.css'
 
 import Auth from '../../utils/auth';
 
@@ -13,9 +14,11 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className="h">
+
       <h1>What You Tryna Watch</h1>
-      <div>
+
+      <div className="h-btns">
           {Auth.loggedIn() ? (
             <>
               <Link className="btn btn-lg btn-primary m-2" to="/">
@@ -39,6 +42,7 @@ function Header() {
             </>
           )}
         </div>
+
     </div>
   );
 };
