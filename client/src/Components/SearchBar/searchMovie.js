@@ -13,21 +13,19 @@ const SearchBar = () => {
   const [options, setOptions] = useState([]);
   useEffect(() => {
     const movie = [];
-    
+
     if (search.length > 3) {
       fetch(`https://www.omdbapi.com/?s=${search}&page=1&apikey=c58b06f8`)
         .then((response) => {
           if (!response.ok) {
-            
           }
-          
+
           setDisplay(true);
           return response.json();
         })
         .then((json) => setOptions(json.Search))
         .catch((error) => {
           setDisplay(false);
-          
         });
     }
     // setOptions(movie);
@@ -38,34 +36,27 @@ const SearchBar = () => {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    
+
     fetch(`https://www.omdbapi.com/?t=${search}&apikey=c58b06f8`)
       .then((response) => {
         if (!response.ok) {
-          
         }
         return response.json();
       })
       .then((json) => setMovie(json))
-      .catch((error) => {
-        
-      });
+      .catch((error) => {});
   }
   return (
     <>
       <Form className="form" onSubmit={handleSubmit}>
         <Form.Group>
           <Container>
-            <Form.Label className="input" htmlFor="query">
-              Movie Name
-            </Form.Label>
-            {/* Movie{" "} */}
             <Form.Control
               className="input"
               type="text"
               // placeholder="Enter movie name"
               name="query"
-              placeholder="i.e Avengers"
+              placeholder="Enter Movie Name"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -74,9 +65,16 @@ const SearchBar = () => {
               selectOption={selectOption}
               display={display}
             />
-            <Button className="button" type="submit" value="Submit">
-              Search
-            </Button>
+            <div className="d-grid gap-2">
+              <Button
+                variant="primary"
+                size="large"
+                type="submit"
+                value="Submit"
+              >
+                Search
+              </Button>
+            </div>
           </Container>
         </Form.Group>
       </Form>
