@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@ap
 // import { Router } from "react-router";
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 import { setContext } from '@apollo/client/link/context';
+import Home from './Components/Home';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import SearchBar from "./Components/SearchBar/searchMovie";
@@ -29,7 +30,8 @@ function App() {
           <div className="container">
             <Header />
               <Routes>
-                <Route path="/" element={<SearchBar />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/search" element={<SearchBar />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
               </Routes>
