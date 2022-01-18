@@ -4,11 +4,11 @@ import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap
 import { useMutation } from '@apollo/client';
 import { useQuery } from '@apollo/client';
 
-import { GET_ME } from '../utils/queries'
-import { REMOVE_BOOK } from '../utils/mutations';
+import { GET_ME } from '../../../../Homework/Book-Search-Engine/client/src/utils/queries'
+import { REMOVE_BOOK } from '../../../../Homework/Book-Search-Engine/client/src/utils/mutations';
 
-import Auth from '../utils/auth';
-import { removeBookId } from '../utils/localStorage';
+import Auth from '../../../../Homework/Book-Search-Engine/client/src/utils/auth';
+import { removeBookId } from '../../../../Homework/Book-Search-Engine/client/src/utils/localStorage';
 
 const SavedBooks = () => {
   let userData;
