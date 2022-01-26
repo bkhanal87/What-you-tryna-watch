@@ -1,5 +1,6 @@
-# Movie Finder 
-Final Group Project for OSU Bootcamp.
+** Title **
+## What-you-tryna-watch ##
+
 
 ## Description
 This app is for finding speciffic movies and leaving comments about speciffic movies.
