@@ -1,11 +1,26 @@
+License
+
 ## What-you-tryna-watch ##
 
-## Project Description ##
+## Table of Contents
+Description
+Installation
+Usage
+Collaborators
+Badges
+How to Contribute to the Project
+Tests
+
+
+
+## Description ##
 
 ## User Story ##
 This application allows users to search any movie, read information about the movie, and read user's comments about the movie.
 
 We decided to use React for frontend to give our application a dynamic user interface. Using React, we were able to build encapsulated components that manage their own state, then compose them to make complex UIs. We decided to use Bootstrap-react ane CSS for styling. We decided to use MongoDB to store our data for greater scalability and to access and query our data for any use case from a unified query API. 
+
+## Features
 
 
 
