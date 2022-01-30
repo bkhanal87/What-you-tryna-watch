@@ -49,10 +49,14 @@ When you grab the code, you will have to drag you (unzipped) project folder into
 Navigate to the src subfolder of the client folder and run "npm start" to start the application's connection. npm start runs the app in development mode. Open http://localhost:3000 to view it in the browser. The page will automatically reload if you make changes to the code. 
 
 ## Usage
-This application can be used for finding a speciffic movies when you get to the homepage. At the homepage you can go and 
+This application can be used for finding a specific movies when you get to the homepage. At the homepage you can go and 
 login in/create an account. Once you have done that you can go to the search bar and start typing the movie into the
-search bar. The sear bar has an auto complete feature so it can help you find the movie you are looking for.After you
+search bar. The search bar has an auto complete feature so it can help you find the movie you are looking for.After you
 have found the movie the title, rating, year of release, runtime, and genre along with the official poster of the movie. 
+
+![image](https://user-images.githubusercontent.com/87610840/151714300-193021b6-e559-40a2-be8c-85384675ee38.png)
+
+
 
 
 ## Collaborators ##
