@@ -54,7 +54,7 @@ login in/create an account. Once you have done that you can go to the search bar
 search bar. The search bar has an auto complete feature so it can help you find the movie you are looking for.After you
 have found the movie the title, rating, year of release, runtime, and genre along with the official poster of the movie. 
 
-![image](https://user-images.githubusercontent.com/87610840/151714300-193021b6-e559-40a2-be8c-85384675ee38.png)
+![What-you-tryna-watch](https://user-images.githubusercontent.com/87610840/151714358-ccbf7c07-ceff-4f40-bba7-12cbb643041f.png)
 
 
 
