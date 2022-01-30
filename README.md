@@ -57,8 +57,6 @@ have found the movie the title, rating, year of release, runtime, and genre alon
 ![project-three](https://user-images.githubusercontent.com/87610840/151714427-b9784205-dcdf-499e-97c1-4e286000a1d1.gif)
 
 
-
-
 ## Collaborators ##
 
 Christian : Back-End/Database;
@@ -70,13 +68,3 @@ Cooper : CSS;
 Basu : Search Engine Autocomplete; CSS
 
 Greg : Login Component, MovieAPI, Comment Component
-
-## License ##
-
-## Badges ##
-
-## Tests ##
-
-## Link
-- https://protected-thicket-50731.herokuapp.com/
-
