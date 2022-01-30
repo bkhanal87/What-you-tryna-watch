@@ -11,23 +11,18 @@ Badges
 How to Contribute to the Project
 Tests
 
+## Project Description ##
+
+As a user looking to search movies, I would like an application that allows me to search any movie, read information about the movie, and read comments about the movie. When I am on the homepage, I am presented with a list of comments in an easy-to-navigate area. When looking for potential movies to watch, I am presented with suggestions to help inform my decision. 
+
+                                                            ## User Story ##
+As a user looking to search movies, I would like an application that allows me to search any movie, read information about the movie, and read comments about the movie. When I am on the homepage, I am presented with a list of comments in an easy-to-navigate area. When looking for potential movies to watch, I am presented with suggestions to help inform my decision. 
 
 
-## Description ##
-
-## User Story ##
-This application allows users to search any movie, read information about the movie, and read user's comments about the movie.
-
-We decided to use React for frontend to give our application a dynamic user interface. Using React, we were able to build encapsulated components that manage their own state, then compose them to make complex UIs. We decided to use Bootstrap-react ane CSS for styling. We decided to use MongoDB to store our data for greater scalability and to access and query our data for any use case from a unified query API. 
-
-## Features
-
-
-
-## Motivation ##
+                                                             ## Motivation ##
 The team wanted to create an application that could help with movie reviews and allow users to give honest opinion on their own views of a movie. Even with the evolution of modern technologies, not very many websites have interactive platforms where users can chat and leave comments about the movies they watched or are planning on watching in the future. 
 
-## Features ##
+                                                              ## Features ##
 
 This application has the following features:
 Users can search for a movie by entering the movie's name on the search bar
@@ -43,11 +38,8 @@ Set up account to notify for mentions
 Add trailers
 Favorite movies
 
-
-## Challenges ##
+                                                              ## Challenges ##
 We had a very limited amount of time to complete this project. On top of the time crunch, one of the developers we had to work with wasn't able to pitch in due to personal reasons. We had a few merge conflicts. We also spent a significant amount of time deciding what to use for database and while creating autosearch feature and adding a comments section. 
-
-## Table of Contents ##
 
 ## Installation ##
 
