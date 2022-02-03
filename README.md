@@ -1,17 +1,18 @@
-License
+[![license](https://img.shields.io/badge/license-MIT-orange)](https://shields.io)
 
-## What-you-tryna-watch ##
+## What-you-tryna-watch 
 
 ## Table of Contents
-Description
-Installation
-Usage
-Collaborators
-Badges
-How to Contribute to the Project
-Tests
+[Description](#description)  
+[Installation](#installation)
+[Technologies](#technologies)  
+[Usage/Link](#usage/link)  
+[Collaborators](#collaborators)
+[Badges](#badges)
+[Contribution](#contribution)
+[Tests](#tests)
 
-## Project Description ##
+## Description 
 
                                                             ## User Story ##
 As a user looking to search movies, I would like an application that allows me to search any movie, read information about the movie, and read comments about the movie. When I am on the homepage, I am presented with a list of comments in an easy-to-navigate area. When looking for potential movies to watch, I am presented with suggestions to help inform my decision. 
@@ -38,7 +39,7 @@ Favorite movies
                                                               ## Challenges ##
 We had a very limited amount of time to complete this project. On top of the time crunch, one of the developers we had to work with wasn't able to pitch in due to personal reasons. Along with a few merge conflicts, we also spent a significant amount of time deciding what to use for database and while creating autosearch feature and adding a comments section. 
 
-## Installation ##
+## Installation 
 
 This program can be run through a browser using the following link to the deployed application:
 https://protected-thicket-50731.herokuapp.com/
@@ -68,3 +69,9 @@ Cooper : CSS;
 Basu : Search Engine Autocomplete; CSS
 
 Greg : Login Component, MovieAPI, Comment Component
+
+## Badges
+
+## Contribution
+
+## Tests
