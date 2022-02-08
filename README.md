@@ -8,20 +8,16 @@
 [Technologies](#technologies)  
 [Usage/Link](#usage/link)  
 [Collaborators](#collaborators)
-[Badges](#badges)
-[Contribution](#contribution)
-[Tests](#tests)
 
 ## Description 
 
-                                                            ## User Story ##
+## User Story ##
 As a user looking to search movies, I would like an application that allows me to search any movie, read information about the movie, and read comments about the movie. When I am on the homepage, I am presented with a list of comments in an easy-to-navigate area. When looking for potential movies to watch, I am presented with suggestions to help inform my decision. 
 
-
-                                                             ## Motivation ##
+## Motivation ##
 The team wanted to create an application that could help with movie reviews and allow users to give honest opinion on their own views of a movie. Even with the evolution of modern technologies, not very many websites have interactive platforms where users can chat and leave comments about the movies they watched or are planning on watching in the future. 
 
-                                                              ## Features ##
+## Features ##
 
 This application has the following features:
 Users can search for a movie by entering the movie's name on the search bar
@@ -36,7 +32,7 @@ Set up account to notify for mentions
 Add trailers
 Favorite movies
 
-                                                              ## Challenges ##
+## Challenges ##
 We had a very limited amount of time to complete this project. On top of the time crunch, one of the developers we had to work with wasn't able to pitch in due to personal reasons. Along with a few merge conflicts, we also spent a significant amount of time deciding what to use for database and while creating autosearch feature and adding a comments section. 
 
 ## Installation 
@@ -69,18 +65,3 @@ Cooper : CSS;
 Basu : Search Engine Autocomplete; CSS
 
 Greg : Login Component, MovieAPI, Comment Component
-
-## Badges
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
-
-## Contribution
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
-
-## Tests
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
